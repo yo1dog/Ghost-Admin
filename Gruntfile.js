@@ -43,7 +43,8 @@ module.exports = function(grunt) {
                     'bower_components/**',
                     'tmp/**',
                     'dist/**',
-                    'vendor/**'
+                    'vendor/**',
+                    'app/prism/**'
                 ]
             },
 
@@ -60,7 +61,8 @@ module.exports = function(grunt) {
                         'tests/**',
                         'tmp/**',
                         'dist/**',
-                        'vendor/**'
+                        'vendor/**',
+                        'app/prism/**',
                     ]
                 },
 

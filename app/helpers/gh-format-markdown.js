@@ -2,8 +2,9 @@
 import {helper} from 'ember-helper';
 import {htmlSafe} from 'ember-string';
 import cajaSanitizers from 'ghost-admin/utils/caja-sanitizers';
+import prismsyntaxhighlighter from 'ghost-admin/prism/showdown-extension/prism-syntax-highlighter';
 
-let showdown = new Showdown.converter({extensions: ['ghostimagepreview', 'ghostgfm', 'footnotes', 'highlight']});
+let showdown = new Showdown.converter({extensions: ['ghostimagepreview', 'ghostgfm', 'footnotes', 'highlight', prismsyntaxhighlighter]});
 
 export function formatMarkdown(params) {
     if (!params || !params.length) {
